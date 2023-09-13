@@ -315,12 +315,12 @@
 
                 var targetObject = new THREE.Object3D();
 
-                targetObject.position.x = 500 * Math.sin(phi);
-                targetObject.position.y = -(i * 8) + 450;
-                targetObject.position.z = 500 * Math.cos(phi);
+                targetObject.position.x = 1000 * Math.sin(phi);
+                targetObject.position.y = -(i * 100) + 500;
+                targetObject.position.z = 1000 * Math.cos(phi);
 
                 vector.copy(targetObject.position);
-                vector.x *= 10;
+                vector.x *= 20;
                 vector.z *= 10;
 
                 targetObject.lookAt(vector);
